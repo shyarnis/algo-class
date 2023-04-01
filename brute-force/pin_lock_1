@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PASSCODE=6452
+# echo $PASSCODE
+# echo "$PASSCODE"
+for i in {0000..9999}
+do
+    echo "Trying lock: $i"
+    if [[ $PASSCODE == $i ]]; then
+        echo "Cracked!!!"
+        echo "passcode = $i"
+        break
+    fi
+done

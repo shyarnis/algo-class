@@ -1,0 +1,12 @@
+#!/bin/bash
+
+A=(5 4 3 2 1)
+# array length
+n=${#A[@]}
+echo $n
+
+# for i in {0..n};
+for (( i=0; i<n; i++));
+do
+    echo Value of $i
+done
